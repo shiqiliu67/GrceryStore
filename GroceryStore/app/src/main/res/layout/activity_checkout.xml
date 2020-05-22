@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="405dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="3dp"
+        android:text="Do you want to use the payment you set up when register or you have other option or you want to delete your payment info?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="207dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onSetted"
+        android:text="Use the one I set up"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="196dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onDelete"
+        android:text="Delete"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="190dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="18dp"
+        android:onClick="onReplace"
+        android:text="Replace a card"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+</androidx.constraintlayout.widget.ConstraintLayout>
